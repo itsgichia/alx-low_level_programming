@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	int i;
+	int s = 0, e = 9;
 
-	for (i = 0; i < 10; i++)
+	while (s <= e)
 	{
-		printf("%d\n", i);
+		putchar(s + '0');
+		s++;
 	}
 
-	putchar('\n');
+	putchar('\n')
 	return (0);
 }
