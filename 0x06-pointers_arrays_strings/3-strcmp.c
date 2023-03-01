@@ -3,7 +3,7 @@
  * _strcmp - compares two strings.
  * @s1: input
  * @s2: input
- * Return: 1 if s1 > s2, 0 if s1 == s2, -1 if s1 < s2
+ * Return: 15 if s1 > s2, 0 if s1 == s2, -15 if s1 < s2
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -11,11 +11,11 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (*s1 < *s2)
 		{
-			return (-1);
+			return (-15);
 		}
 		else if (*s1 > *s2)
 		{
-			return (1);
+			return (15);
 		}
 		s1++;
 		s2++;
@@ -26,10 +26,10 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (*s1 == '\0')
 	{
-		return (-1);
+		return (-15);
 	}
 	else
 	{
-		return (1);
+		return (15);
 	}
 }
